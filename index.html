@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS基础热身运动</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style type="text/css">
+   #box{
+	   width:100px;
+	   height: 100px;
+	   background: white;
+	   border: solid 3px black;
+	  
+   }
+	button{
+		width:150px;
+		height:100px; 
+		margin-bottom: 30px;
+        display: inline;
+        color: white;
+		}
+		.btn2{
+			width:80px;
+			height:30px;
+			color:white;
+			margin: 1px 40px; 
+			background:blue;
+
+		}	
+	#div1{
+		width:350px;
+		height:250px; 
+		border: 15px solid gray;
+		padding: 10px;
+		float:left;
+		margin-top:50px;
+		display: none;
+		}
+	
+		.square{
+			width:50px;
+			height: 30px;
+			border: 1px solid gray;
+			padding-bottom: 10px 10px;
+			display: inline;
+			margin: 5px;
+		}
+		#box1{
+			background: red;
+		}
+		#box2{
+			background: orange;
+		}
+		#box3{
+			background: blue;
+		}
+		.btn{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+<h1>请为下面的DIV设置样式：</h1><button class="btn">点击设置样式</button>
+<div id="box"></div>
+<div id="div1">
+	<p>请选择背景色：
+		<button  class="square" id=box1>红</<button>
+		<button  class="square" id=box2>黄</button >
+		<button  class="square" id=box3>蓝</button >
+    </p>
+	<p>请选择宽(px)：
+		<button  class="square" id=box4 >200</button>
+		<button  class="square" id=box5 >300</button>
+		<button  class="square"  id=box6>400</button>
+	</p>
+	<p>请选择高(px)：
+			<button  class="square" id=box7 >200</button>
+			<button  class="square" id=box8 >300</button>
+			<button  class="square" id=box9 >400</button>
+		</p>
+		<button class="btn2" id="recover">恢复</button>
+		<button class="btn2" id="sure">确定</button>
+</div>
+<script type="text/javascript">
+var Obtn=document.querySelector(".btn");
+var Odiv1=document.getElementById("div1");
+var Obox1=document.getElementById("box1");
+var Obox2=document.getElementById("box2");
+var Obox3=document.getElementById("box3");
+var Obox4=document.getElementById("box4");
+var Obox5=document.getElementById("box5");
+var Obox6=document.getElementById("box6");
+var Obox7=document.getElementById("box7");
+var Obox8=document.getElementById("box8");
+var Obox9=document.getElementById("box9");
+var Obox=document.getElementById("box");
+var Orecover=document.getElementById("recover");
+var Osure=document.getElementById("sure");
+Obtn.onclick=function(){
+	Odiv1.style.display="block";
+}
+Obox1.onclick=function(){
+	Obox.style.background="red";
+}
+Obox2.onclick=function(){
+	Obox.style.background="orange";
+}
+Obox3.onclick=function(){
+	Obox.style.background="blue";
+}
+Obox4.onclick=function(){
+	Obox.style.width="200px";
+	Obox.style.background="red";
+}
+Obox5.onclick=function(){
+	Obox.style.width="300px";
+	Obox.style.background="orange";
+}
+Obox6.onclick=function(){
+	Obox.style.width="400px";
+	Obox.style.background="blue";
+}
+Obox7.onclick=function(){
+	Obox.style.height="200px";
+	Obox.style.background="red";
+}
+
+Obox8.onclick=function(){
+	Obox.style.height="300px";
+	Obox.style.background="orange";
+}
+Obox9.onclick=function(){
+	Obox.style.height="400px";
+	Obox.style.background="blue";
+}
+Orecover.onclick=function(){
+	Obox.style.width="100px";
+	Obox.style.height="100px";
+	Obox.style.background="white";
+}
+Osure.onclick=function(){
+	Odiv1.style.display="none";
+}
+
+</script>
+
+</body>
+</html>
